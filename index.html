@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>main page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--navbar start-->
+  <nav class="nav">
+    <div class="nav-wrapper" style="padding: 0 20px; width: 70%; margin: auto;">
+      <a style="color: rgb(179, 70, 223);" href="#" class="brand-logo left">Logo</a>
+      <ul id="nav-mobile" class=" right ">
+        <li style="display: none;"  class="login_link"><a class="a" id="logout" href="#">LogOut</a></li>
+        <li style="display: none;"  class="logout_link"><a class="a modal-trigger" data-target="modal2" href="#modal2">Login</a></li>
+        <li style="display: none;"  class="logout_link"><a class="a modal-trigger" data-target="modal1" href="#modal1">Sign UP</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--navbar  end -->
+
+
+  <!-- signup form-->
+   <!-- Modal Trigger -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+      <h3>Sign up</h3>
+      <form class="col s5 form signup_form">  
+        <div class="row" >
+          <div class="input-field col s12">
+            <input id="signup-email" type="email" class="validate">
+            <label for="signup-email">Email Adress</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="sign-password" type="password" class="validate">
+            <label for="sign-password">Choose Password</label>
+          </div>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">sign up</button>
+      </form>
+     </div>
+   </div>
+  <!-- signup form end -->
+
+  <!-- signup form-->
+   <!-- Modal Trigger -->
+   <div id="modal2" class="modal">
+    <div class="modal-content">
+     <h3>Login</h3>
+     <form class="col s5 form login_form">  
+       <div class="row" >
+         <div class="input-field col s12">
+           <input id="login-email" type="email" class="validate">
+           <label for="login-email">Email Adress</label>
+         </div>
+       </div>
+       <div class="row">
+         <div class="input-field col s12">
+           <input id="login-password" type="password" class="validate">
+           <label for="login-password">Choose Password</label>
+         </div>
+       </div>
+       <button class="btn yellow darken-2 z-depth-0">Login</button>
+     </form>
+    </div>
+  </div>
+ <!-- signup form end -->
+
+  <!-- adding form-->
+  <form class="col s5 add_form" style="display: none;">
+  <div class="row pair_app_form">
+    <div class="input-field col s12 m6 l6">
+      <input id="title" type="text" class="validate">
+      <label class="active" for="title">Enter your Title</label>
+    </div>
+    <div class="input-field col s12 m6 l6">
+      <input id="content" type="text" class="validate">
+      <label class="active" for="content">Enter your Note</label>
+    </div>
+    <div class="pair_btn">
+      <button class="btn blue-gray  darken-2 z-depth-0 adding">+</button>
+        </div>
+  </div>
+</form>
+    <!-- adding form end-->
+    <form class="col s5 ui_add_form" style="display: none;">
+      <div class="row pair_app_form">
+        <div class="input-field col s12 m6 l6">
+          <input id="title1" type="text" class="validate">
+          <label class="active" for="title1">Enter  Title</label>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <input id="content1" type="text" class="validate">
+          <label class="active" for="content1">Enter  Note</label>
+        </div>
+        <div class="pair_btn">
+          <button class="btn blue-gray  darken-2 z-depth-0 adding">+</button>
+            </div>
+      </div>
+    </form>
+
+    <div class="loading">
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+    <!--items of nots-->
+  <div class="row items_pair">
+ 
+  </div>
+  <div class="row items_pair ui_befor_login" style="display: none;">
+    <div class="col s12 m4 pair">
+      <div class="card  darken-1 card_bac">   
+        <div class="card-content white-text ">
+          <span class="card-title">title</span>
+          <p>discription</p>
+        </div>
+      </div>
+      <div style="display: flex; background: #c9e8f3; align-items: center; justify-content: center;">
+        <a class="btn-floating "><i class="material-icons">delete</i></a> 
+        <a class="" style="margin: 0 20%;"><i class=""></i></a> 
+        <a class="btn-floating "><i class="material-icons">edit</i></a> 
+      </div>
+    </div>
+    <div class="col s12 m4 pair hidd">
+      <div class="card  darken-1 card_bac">
+        <div class="card-content white-text">
+          <span class="card-title">title</span>
+          <p>  vdiscription discription  discription vdiscription vdiscriptiondiscription  discription vdiscription vdiscription</p>
+        </div>
+      </div>
+      <div style="display: flex; background: #c9e8f3; align-items: center; justify-content: center;">
+        <a class="btn-floating "><i class="material-icons">delete</i></a> 
+        <a class="" style="margin: 0 20%;"><i class=""></i></a> 
+        <a class="btn-floating "><i class="material-icons">edit</i></a> 
+      </div>
+    </div>
+    <div class="col s12 m4 pair">
+      <div class="card  darken-1 card_bac">
+        <div class="card-content white-text">
+          <span class="card-title">title</span>
+          <p>discription</p>
+        </div>
+      </div>
+      <div style="display: flex; background: #c9e8f3; align-items: center; justify-content: center;">
+        <a class="btn-floating "><i class="material-icons">delete</i></a> 
+        <a class="" style="margin: 0 20%;"><i class=""></i></a> 
+        <a class="btn-floating "><i class="material-icons">edit</i></a> 
+      </div>
+    </div>
+  </div>
+   <!--items of nots end -->
+  
+   <div class="cov"></div>
+ 
+      <div class="alert"> Sorry your screen is lower than 320px</div>
+
+   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAyag5HO-lIJ17q_Aqz-w9wdgxBeX-LO7s",
+    authDomain: "todo-app-f8a2f.firebaseapp.com",
+    projectId: "todo-app-f8a2f",
+    storageBucket: "todo-app-f8a2f.appspot.com",
+    messagingSenderId: "574683869945",
+    appId: "1:574683869945:web:1a8a60c97347c0977a6828",
+    measurementId: "G-GPLNY0RFJY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const auth = firebase.auth();
+  db.settings({timestampsInSnapshoot:true});
+</script>
+  <script src="./materialize/js/materialize.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/js.js"></script>
+  <script src="./js/auth.js"></script>
+
+</body>
+
+</html>

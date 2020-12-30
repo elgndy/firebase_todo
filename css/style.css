@@ -1,0 +1,204 @@
+body{
+    background-image: url(../imgs/bac.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.a{
+    color: #aaa;
+}
+.nav{
+    position: relative;
+    z-index: 10;
+    background: #fff;
+}
+#nav-mobile li:hover >a{
+color: #000;
+transition: all .5s;
+}
+
+.pair_form{
+    margin: 0;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background: rgba(59, 58, 58, 0.3);
+    z-index: 2;
+    visibility: hidden;
+    
+}
+.pair_form .form{
+    margin:auto;
+    background: #fff;
+    box-shadow: -0px 2px 3px rgb(102, 102, 102);
+    padding: 30px 20px;
+    transform: scale(.6);
+}
+.pair_form .form h3{
+    color: #666;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+.pair_app_form{
+    width: 100%;
+    padding: 5px 25%;
+}
+.col .row {
+    margin: 0;
+}
+.pair_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .pair_btn .btn{
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding:0 0px 5px 0px;
+    border-radius: 50%;
+    transition: all .2s;
+    transform: rotate(0deg);
+}
+.pair_btn .btn:hover{
+    transform: rotate(180deg);
+    transition: all .2s;
+    padding:0 0px 12px 0px;
+
+}
+
+
+/*.pair_nots{
+    display: flex;
+    background: red;
+}*/
+.items_pair{
+    padding: 0 50px;
+    
+}
+.pair{
+    height: 200px !important;
+}
+.card_bac{
+    padding: 5px;
+    background: 0; 
+}
+.card-content p{
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+/*title*/
+.card-title{
+    font-weight: bold !important;
+    font-size: 30px !important;
+    letter-spacing: 1.5px;
+    color: #666 !important;
+}
+.card_bac > div{
+    background: rgba(100, 201, 239,.3);
+    width: auto;
+}
+
+.card_bac > div *{
+    color: rgba(68, 68, 68);
+}
+
+.btn-floating{
+    background-color:rgb(255, 255, 255) !important;
+}
+.btn-floating:first-of-type i{
+    color: rgb(252, 156, 156) ;
+}
+
+.btn-floating:last-of-type i{
+    color:#b0e2f5;
+}
+
+.loading{
+    width: 20%;
+    background: #aaa;
+    margin: auto;
+    position: relative;
+    display: none;
+}
+.loading > div{
+    background: #cae5f4;
+}
+.indeterminate{
+    background: #f8b878 !important;
+}
+
+.message_adding{
+    color: rgb(248, 248, 248);
+    
+}
+
+.cov{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgb(22, 22, 22);
+    z-index: 1000;
+    display: block;
+}
+
+.pair_a{
+    display: flex; background: #c9e8f3; align-items: center; justify-content: center;
+}
+
+.alert{
+    position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        display: none;
+}
+@media (min-width: 481px) and (max-width: 780px) {
+
+    .hidd{
+        display: none;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .nav-wrapper{
+        padding: 0 !important;
+    }
+    .hidd{
+        display: none;
+    }
+}
+
+@media (max-width: 320px){
+ 
+ .alert{
+     display: block ;
+ }
+}
